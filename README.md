@@ -6,75 +6,69 @@
 **Labsger** (Laboratories Manager) is a streamlined web application designed to efficiently manage hacking laboratory data in a centralized and organized manner. Built on the MVC architecture, it offers an intuitive, user-friendly interface for seamless interaction with lab information while ensuring a structured workflow. Whether you're a penetration tester or a Capture The Flag (CTF) enthusiast, Labsger helps you stay on top of your lab activities and track data effectively, enhancing your productivity and organization.
 
 ## Features 📖
-- **Encryption:** Supports various input file extensions for flexible encryption.
-- **Decryption:** Utilizes a unique key derived from a custom password for secure decryption.
-- **Shredding:** Ensures secure file deletion through data overwriting techniques.
-- **Cloud Storage:** Offers the option to store encrypted files in a native cloud database.
+- **Security:** Secure user registration and login processes, along with detailed access logs to track changes and interactions with lab data.
+- **Usability:** An intuitive, user-friendly interface that ensures seamless navigation and interaction with the application.
+- **Efficient Workflow:** Streamlined workflows designed to enhance productivity and facilitate easy management of tasks.
+- **Centralized Data Management:** Full database integration for managing and storing laboratory data in a centralized, organized way.
 
-## Technologies 📖
-- **Encryption:** Supports various input file extensions for flexible encryption.
-- **Decryption:** Utilizes a unique key derived from a custom password for secure decryption.
-- **Shredding:** Ensures secure file deletion through data overwriting techniques.
-- **Cloud Storage:** Offers the option to store encrypted files in a native cloud database.
+## Technologies 🧰
+- **Server:** Apache/2.4.56
+- **Database:** MySQL
+- **Backend programming language:** PHP 8.2.4
+- **Frontend:** Tailwind CSS v3.0
   
 ## Installation ⚙️
-1. Clone the repository
+### Pre-requisites
+- Download and install XAMPP.
+- Install PHP last version on your device
 
-2. Go to the cipherty folder and install requirements by running the following command:
-```bash
-pip install -r requirements.txt
-```
+### Procedure
+1. Clone or download the repository
 
-3. Go to the [Mongo Atlas](https://account.mongodb.com/account/login) and create an account in case you hadn't it.
+2. Unzip the project if it's needed, then move the project's directory *labsger-app* to the *XAMPP/htdocs* folder
 
-4. Go to **Database Access** option on left bar and configure a new user by assigning a username with a password.
+3. Once the services are running you need to create and configure the database by doing the following
+  - Go to *http://localhost/phpmyadmin* on the browser
+  - Create a new database
+  - Inside the database use the following [queries](docs/db-queries.txt) to set up the required tables.
+  - Configure a new user with a secure password to set a db connection later.
 
-5. Now, click on **Database** option on left bar, go to *Browse Collections* and hit on "Create Database". You will be asked for a database name and collection name.
-  **E.g.**
-  ```python
-  Database name: cipherty
-  Collection name: enc_data
-  ```
+4. Open the project using a code editor of your preference and go to */labsger-app/config/Connection.php*, once there replace your db name and user credentials based on the configured in the previous step.
 
-6. Return to **Database** option, click on "Connect" and finally select "Drivers". Copy the URI you see there and paste it on your MONGO_URI variable (located in **.env** file):
-  ```python
-  MONGO_URI=mongodb+srv://USERNAME:PASSWORD@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority
-  MONGO_DB=YOUR_DB_NAME
-  ```
-- Do not forget to replace the username and password with the values configurated in step 4.
+5. Now, you should be able to use **Labsger** from the browser by going to the following URL: *http://localhost/labsger-app/**
 
-7. Finally, go to your **lib/db_operations.py** file within the **cipherty** folder and replace your current "Collection name" in line 24, the one configurated in step 5.
+## Application preview 🖥️
 
-## Usage 🔒
-```bash
-python3 cipherty.py
-```
+#### Registration panel
 <p align="center">
-  <img src="captures/cipherty_mainworkflow.png" alt="Description of Image" width="800"/>
+  <img src="docs/images/labsger_register.png" alt="Registration panel view" width="1000"/>
 </p>
 
-## Samples 💻
-
-#### Database view from command line
+#### Login panel
 <p align="center">
-  <img src="captures/cipherty_table.png" alt="Description of Image" width="1000"/>
+  <img src="docs/images/labsger_login.png" alt="Login panel view" width="1000"/>
 </p>
 
-#### Encrypted file content
+#### Laboratories Management panel
 <p align="center">
-  <img src="captures/encrypted_view.png" alt="Description of Image" width="1000"/>
+  <img src="docs/images/labsger_labs-view.png" alt="Laboratories dashboard panel view" width="1000"/>
+</p>
+
+#### Add/Update machine form
+<p align="center">
+  <img src="docs/images/labsger_add-machine.png" alt="Add machine form view" width="1000"/>
 </p>
 
 ## Annexes 📎
 <table>
   <tr>
     <td style="text-align: center;">
-      <img src="captures/cipherty_fstructure.png" alt="Description of Image 1" style="width: 500px;"/>
-      <div>Register body from CLI</div>
+      <img src="docs/images/labsger_view.png" alt="Machine details view" style="width: 500px;"/>
+      <div>Machine details view</div>
     </td>
     <td style="text-align: center;">
-      <img src="captures/cipherty_registers.png" alt="Description of Image 2" style="width: 500px;"/>
-      <div>Registers body from DB</div>
+      <img src="docs/images/labsger_project-structure.png" alt="Project tree" style="width: 500px;"/>
+      <div>Project structure</div>
     </td>
   </tr>
 </table>
@@ -83,7 +77,5 @@ python3 cipherty.py
 
 **Author:** @birdm4nw
 
-
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) 
 [![Version](https://img.shields.io/badge/Version-1.0-blue.svg)](https://github.com/birdm4nw/labsger-app/releases) 
-
