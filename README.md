@@ -60,9 +60,9 @@
 </p>
 
 ## Upcoming updates
-- **Data export: ** Exporting machine data to CSV and XLSX formats for easy extraction and analysis of laboratory data in a portable format.
-- **Integration with hacking platforms: ** Integrating with popular hacking platforms and CTF challenges to enhance tracking and management of laboratory activities, linking the app with real-time challenges and data.
-- **AI-Powered Lab report generation: ** Automatically generated summary reports based on the techniques used in the laboratory and the associated linked data.
+- **Data export:** Exporting machine data to CSV and XLSX formats for easy extraction and analysis of laboratory data in a portable format.
+- **Integration with hacking platforms:** Integrating with popular hacking platforms and CTF challenges to enhance tracking and management of laboratory activities, linking the app with real-time challenges and data.
+- **AI-Powered Lab report generation:** Automatically generated summary reports based on the techniques used in the laboratory and the associated linked data.
 
 ## Annexes 📎
 <table>
