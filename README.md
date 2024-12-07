@@ -1,4 +1,4 @@
-# Labsger - Web Application for Managing Hacking Laboratories
+# Labsger - [Laboratories Manager]
 
 ![Labsger Banner](docs/images/labsger_dashboard.png) <!-- Replace with your banner image path -->
 
