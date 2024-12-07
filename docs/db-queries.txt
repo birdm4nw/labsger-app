@@ -1,0 +1,28 @@
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE access_logs (
+    id INT(11) PRIMARY KEY AUTO_INCREMENT,               
+    user_id INT(11),                                    
+    login_time DATETIME NOT NULL,                        
+    FOREIGN KEY (user_id) REFERENCES users(id)           
+);
+
+CREATE TABLE machines (
+    id INT(11) PRIMARY KEY AUTO_INCREMENT,
+    user_id INT(11),
+    name VARCHAR(255) COLLATE utf8mb4_general_ci NOT NULL,
+    operating_system VARCHAR(255) COLLATE utf8mb4_general_ci NOT NULL,
+    difficulty VARCHAR(255) COLLATE utf8mb4_general_ci NOT NULL,
+    platform VARCHAR(255) COLLATE utf8mb4_general_ci NOT NULL,
+    techniques VARCHAR(255) COLLATE utf8mb4_general_ci NOT NULL,
+    status VARCHAR(255) COLLATE utf8mb4_general_ci NOT NULL,
+    last_update TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
