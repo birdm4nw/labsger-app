@@ -1,6 +1,6 @@
 # Labsger - Web Application for Managing Hacking Laboratories
 
-![Labsger Banner](./images/labsger-banner.png) <!-- Replace with your banner image path -->
+![Labsger Banner](docs/images/labsger_dashboard.png) <!-- Replace with your banner image path -->
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) <!-- Badge for License -->
 [![Version](https://img.shields.io/badge/Version-1.0-blue.svg)](https://github.com/birdm4nw/labsger-app/releases) <!-- Badge for Version -->
