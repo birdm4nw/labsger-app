@@ -1,6 +1,6 @@
 # Labsger - Hacking Laboratories Manager
 
-![Labsger Banner](docs/images/labsger_dashboard.png) 
+![Labsger Banner](docs/images/labsger_mainView.png) 
 
 # Overview
 **Labsger** (Laboratories Manager) is a streamlined web application designed to efficiently manage hacking laboratory data in a centralized and organized manner. Built on the MVC architecture, it offers an intuitive, user-friendly interface for seamless interaction with lab information while ensuring a structured workflow. Whether you're a penetration tester or a Capture The Flag (CTF) enthusiast, Labsger helps you stay on top of your lab activities and track data effectively, enhancing your productivity and organization.
