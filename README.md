@@ -68,7 +68,7 @@
 <table>
   <tr>
     <td style="text-align: center;">
-      <img src="docs/images/labsger_view.png" alt="Machine details view" style="width: 500px;"/>
+      <img src="docs/images/labsger_dialog.png" alt="Machine details view" style="width: 500px;"/>
       <div>Machine details view</div>
     </td>
     <td style="text-align: center;">
