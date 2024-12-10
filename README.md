@@ -51,12 +51,12 @@
 
 #### Laboratories Management panel
 <p align="center">
-  <img src="docs/images/labsger_labs-view.png" alt="Laboratories dashboard panel view" width="1000"/>
+  <img src="docs/images/labsger_machinesView.png" alt="Laboratories dashboard panel view" width="1000"/>
 </p>
 
 #### Add/Update machine form
 <p align="center">
-  <img src="docs/images/labsger_add-machine.png" alt="Add machine form view" width="1000"/>
+  <img src="docs/images/labsger_add_update.png" alt="Add machine form view" width="1000"/>
 </p>
 
 ## Upcoming updates
